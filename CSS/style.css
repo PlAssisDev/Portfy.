@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+body{
+  overflow: hidden;
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #e4e7eb;
+}
+
+nav{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 80px;
+  line-height: 80px;
+  z-index: 111;
+}
+
+.logo{
+  display: flex;
+  font-size: 40px;
+  font-weight: 800;
+  color: #3d535f;
+  letter-spacing: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+b{
+  font-size: 70px;
+  color: #876445;
+}
+
+.navItens{
+  display: flex;
+}
+
+.navItens li{
+  list-style: none;
+  margin: 0 15px;
+}
+
+.navItens li a{
+  font-size: 25px;
+  color: #3d535f;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navItens li:hover a,.links a:hover{
+  color: #876445;
+}
+
+.links a{
+ font-size: 30px;
+ color: #3d535f;
+ margin: 25px 10px;
+}
+
+.wrapper{
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 80px);
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+.wrapper::before{
+  position: absolute;
+  content: '';
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  left: -12%;
+  top: 40%;
+  background: linear-gradient(45deg, #573c25, #EEC373);
+  animation: bola 6s linear infinite;
+}
+
+.wrapper::after{
+  position: absolute;
+  content: '';
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  left: 35%;
+  top: 12%;
+  background: linear-gradient(45deg,#573c25,#EEC373);
+  animation: bolinha 6s linear infinite;
+}
+
+@keyframes bola{
+  50%{
+    left: -13%;
+    top: 41%;
+  }
+}
+
+@keyframes bolinha{
+  50%{
+    left: 35%;
+    top: 10%;
+  }
+}
+
+.cols{
+  width: 60%;
+  width: 50%;
+}
+
+.cols0{
+  z-index: 5;
+}
+
+.topline{
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #3d535f;
+}
+
+.topline::after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 45px;
+  bottom: 10px;
+  background-color: #876445;
+}
+
+h1{
+  display: block;
+  font-size: 7em;
+  font-weight: 900;
+  color: #3d535f;
+}
+
+.multiTexto{
+  color: #876445;
+  text-transform: capitalize;
+}
+
+p{
+  display: block;
+  width: 90%;
+  font-size: 1.5em;
+  color: #3d535f;
+  font-style: italic;
+}
+
+.btns{
+  width: 100%;
+  position: relative;
+  left: 150px;
+}
+
+button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  color: aliceblue;
+  background-color: #573c25;
+  padding: 8px 14px;
+  margin: 40px 5px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover{
+  transition: 800ms;
+  background-color: #876445;
+}
+
+.imgbox{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imgbox img{
+  position: relative;
+  height: 90%;
+  width: calc(120% - 80px);
+  top: -80px;
+  right: -120px;
+  animation: animateUser 4s linear infinite;
+}
+
+
+.imgbox #laptop{
+  position: absolute;
+  top: 65%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 90%;
+  filter: blur(10px);
+}
+
+.copyright {
+  color: #3d535f;
+  font-size: 13px;
+  margin: 20px auto;
+  text-align: center;
+}
